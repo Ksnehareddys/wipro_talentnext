@@ -6,26 +6,26 @@ public class Question11 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		String s=sc.next().toLowerCase();
-		int age=sc.nextInt();
-		if((s.equals("female")||s.equals("male")))
+		char ch=sc.next().toUpperCase().charAt(0);
+		switch(ch)
 		{
-			if((s.equals("female")) && (age>=1 && age<=58))
-			{
-				System.out.println("The percentage of interest is 8.2%.");
-			}
-			else if((s.equals("female")) && (age>=59 && age<=100))
-		    {
-				System.out.println("The percentage of interest is 9.2%.");
-			}
-			else if((s.equals("male")) && (age>=1 && age<=58))
-			{
-				System.out.println("The percentage of interest is 8.2%.");
-			}
-			else
-			{
-				System.out.println("The percentage of interest is 10.5%.");
-			}
+		case 'R':
+			System.out.println(ch+"-> Red");
+			break;
+		case 'B':
+			System.out.println(ch+"-> Blue");
+			break;
+		case 'Y':
+			System.out.println(ch+"-> Yellow");
+			break;
+		case 'O':
+			System.out.println(ch+"-> Orange");
+			break;
+		case 'W':
+			System.out.println(ch+"-> White");
+			break;
+		default:
+		System.out.println("Invalid code");
 		}
 
 	}

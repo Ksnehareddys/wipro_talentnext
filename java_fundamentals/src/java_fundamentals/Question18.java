@@ -7,13 +7,15 @@ public class Question18 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int sum=0;
-		while(n!=0)
+		for(int i=0;i<n;i++)
 		{
-			sum+=n%10;
-			n=n/10;
+			for(int j=0;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
 		}
-      System.out.println("Sum is "+sum);
+
 	}
 
 }

@@ -1,15 +1,14 @@
 package java_fundamentals;
 
-import java.util.Scanner;
-
 public class Question14 {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		for(int i=1;i<=n;i++)
+		for(int i=23;i<=57;i++)
 		{
-			System.out.print(i+" ");
+			if(i%2==0)
+			{
+				System.out.print(i+" ");
+			}
 		}
 
 	}
