@@ -49,7 +49,7 @@ public class Project1 {
 						break;
 				}
 				int salary=Basic[i]+HRA[i]+da-IT[i];
-				System.out.println("EmpNo\tEmp Name\t\tDepartment\tDesignation\tSalary");
+				System.out.println("EmpNo\tEmp Name\t\tDepartment\tDesignation\t\tSalary");
                 System.out.println(Empno[i] + "\t" + EmpName[i] + "\t\t" + Department[i] + "\t\t" + designation + "\t\t" + salary);
                 break;
 				
